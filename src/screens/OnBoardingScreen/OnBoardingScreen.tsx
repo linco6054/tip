@@ -12,7 +12,15 @@ const OnBoardingScreen = () => {
     <SafeArea>
       <View style={{ flex: 1 }}>
         <View style={{ flex: 2, position: "relative" }}>
-          <CurveIcon style={{ position: "absolute", top: 0, right: 0 }} />
+          <CurveIcon
+            style={{
+              position: "absolute",
+              top: 40,
+              left: 0,
+              height: "100%",
+              width: "70%",
+            }}
+          />
           <OnboardingIcon
             style={{
               position: "absolute",
@@ -21,15 +29,16 @@ const OnBoardingScreen = () => {
             }}
           />
         </View>
-        <View style={{ flex: 2 }}>
-          <Center mt="10">
+        <View style={{ flex: 2, paddingTop: 50 }}>
+          <Center pt={5}>
             <Text fontSize="titleLarge" fontWeight={600}>
               {t("welcome")}
             </Text>
             <Text
               maxW="295px"
               textAlign="center"
-              my="5"
+              mt={3}
+              mb={5}
               fontSize="Button"
               color="main.gray.4"
               fontFamily="heading"
