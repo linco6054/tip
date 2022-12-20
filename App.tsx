@@ -1,14 +1,15 @@
-import React from "react";
-import { NativeBaseProvider } from "native-base";
 import "./i18n";
-import customTheme from "./src/theme";
+
 import {
   NavigationContainer,
   createNavigationContainerRef,
 } from "@react-navigation/native";
-import { SafeAreaProvider } from "react-native-safe-area-context";
-import { OnBoardingScreen } from "./src/screens";
+
+import { NativeBaseProvider } from "native-base";
+import React from "react";
 import RootNavigator from "./src/navigation/RootNavigator";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import customTheme from "./src/theme";
 
 const navigationRef = createNavigationContainerRef();
 export default function App() {
